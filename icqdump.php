@@ -105,7 +105,7 @@
 
 	// Create directory
 	if(!is_dir($dumpFolder))
-		mkdir($dumpFolder);
+		mkdir($dumpFolder, 0777, true);
 
 	$css = file_get_contents('icqdump.css');
 
